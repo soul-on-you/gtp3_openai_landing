@@ -1,0 +1,112 @@
+.possibility {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #040C18;
+}
+
+.possibility__image {
+  flex: 1;
+}
+
+.possibility__image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.possibility__description {
+  flex: 1;
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+
+.possibility__description h1 {
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 45px;
+  max-width: 426px;
+}
+
+.possibility__description p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-text);
+  margin: 2rem 0;
+}
+
+.possibility__description h6 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #71e5ff;
+  margin: 1rem 0;
+}
+
+.possibility__description a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-subtext);
+  margin: 2rem 0;
+}
+
+.possibility__description h1,
+.possibility__description p,
+.possibility__description h6,
+.possibility__description a {
+  font-family: var(--font-family);
+}
+
+@media screen and (max-width: 870px) {
+    .possibility {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .possibility__description{
+        margin: 3rem 0.5rem 1rem 0.5rem;
+    }
+
+    .possibility__description p,
+    .possibility__description a{
+        margin: 2rem 0 0 0;
+    }
+
+    .possibility__description h6{
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .possibility__description h1{
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .possibility__description p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .possibility__description h6{
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .possibility__description a{
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .possibility__description{
+        margin: 3rem 0rem 1rem 0rem;
+    }
+}
+    

@@ -1,0 +1,125 @@
+.features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #040C18;
+}
+
+.features__title {
+  flex: 1;
+  margin: 3rem;
+  min-width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.features__title h1 {
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 45px;
+  max-width: 426px;
+}
+
+.features__title p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-subtext);
+  margin: 2rem 0;
+}
+
+.features__title h1,
+.features__title p {
+  font-family: var(--font-family);
+}
+
+.features__cards .features__cards__container {
+  max-width: 700px;
+}
+
+.features__cards .features__cards__container .text {
+  max-width: 350px;
+}
+
+.features__cards .features__cards__container .title h1 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+}
+
+.features__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 676px;
+  margin: 2rem;
+}
+
+@media screen and (max-width: 1392px) {
+  .features__title h1 {
+    max-width: 700px;
+  }
+  .features__title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 935px) {
+  .features__cards {
+    min-width: 420px;
+    margin-top: 0rem;
+  }
+  .features__cards .features__cards__container {
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .features__cards .features__cards__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .features__cards {
+    min-width: 100px;
+    margin-top: 0rem;
+  }
+
+  .features__cards .features__cards__container .text {
+    max-width: 100%;
+    margin: 1rem 0 2rem 0;
+  }
+  .features__cards__container .title {
+    max-width: 100%;
+  }
+  .features__title {
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .features__title h1 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .features__title {
+    min-width: 200px;
+  }
+  .features {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .features__title {
+    margin: 0;
+  }
+  .features__title h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
